@@ -9,8 +9,12 @@ async function getQuotes() {
 }
 async function quotesPrint() {
   var quotes = await getQuotes();
-  let ran = Math.floor(Math.random()*quotes.length)
-  let quote = document.getElementById('quote').innerHTML = `${quotes[ran].quote}`;
-  let author = document.getElementById('author').innerHTML = `- ${quotes[ran].author}`;
+  function interval(){
+    ran = Math.floor(Math.random()*quotes.length)
+    document.getElementById('quote').innerHTML = `${quotes[ran].quote}`;
+    document.getElementById('author').innerHTML = `- ${quotes[ran].author}`;
+  };
+  interval();
+  setInterval(interval, 5000);
 }
 quotesPrint()
