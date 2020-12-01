@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@600&family=Nerko+One&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --primary1: 'Caveat', cursive;
+    --secondary: 'Dancing Script', cursive;
+    --primary: 'Nerko One', cursive;
+}
+.container{
+    border: 1px solid black;
+    width: 80%;
+    /* height: 60px; */
+    margin: 10px auto;
+}
+#quote{
+    font-family: var(--primary);
+    font-weight: normal;
+    text-align: center;
+}
+#author{
+    font-family: var(--secondary);
+    font-weight: normal;
+    text-align: right;
+    padding: 0px 10px 0px 0px;
+}
